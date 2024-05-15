@@ -67,7 +67,7 @@ function create ()
     platforms.create(10, 300, 'ground');
     platforms.create(750, 100, 'ground');
     platforms.create(300, 400, 'ground');
-    platforms.create(600, 500, 'ground-1');
+    platforms.create(700, 500, 'ground-1');
     platforms.create(680, 460, 'box');
     platforms.create(150, 150, 'box');
     platforms.create(600, 216, 'box');
