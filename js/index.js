@@ -32,6 +32,7 @@ function preload ()
 {
     this.load.image('sky', 'assets/image/bghalowen.jpeg');
     this.load.image('ground', 'assets/image/ground-tanah.png');
+    this.load.image('ground-1', 'assets/image/ground-tanah(1).png');
     this.load.image('peti', 'assets/image/peti.png');
     this.load.image('bomb', 'assets/image/bomb.png');
     this.load.image('gameover','assets/image/gameover.png');
@@ -61,9 +62,11 @@ function create ()
     platforms.create(400, 568, 'ground').setScale(2).refreshBody();
 
     //  Now let's create some ledges
-    platforms.create(600, 400, 'ground');
-    platforms.create(50, 250, 'ground');
-    platforms.create(750, 220, 'ground');
+    platforms.create(500, 250, 'ground');
+    platforms.create(10, 300, 'ground');
+    platforms.create(750, 100, 'ground');
+    platforms.create(300, 400, 'ground');
+    platforms.create(600, 500, 'ground-1');
 
     // The player and its settings
     player = this.physics.add.sprite(120, 450, 'dude');
