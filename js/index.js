@@ -34,6 +34,7 @@ function preload ()
     this.load.image('ground', 'assets/image/ground-tanah.png');
     this.load.image('ground-1', 'assets/image/ground-tanah(1).png');
     this.load.image('peti', 'assets/image/peti.png');
+    this.load.image('box', 'assets/image/box.png');
     this.load.image('bomb', 'assets/image/bomb.png');
     this.load.image('gameover','assets/image/gameover.png');
     this.load.spritesheet('dude', 'assets/image/org.png', { frameWidth: 26, frameHeight: 48 });
@@ -67,6 +68,9 @@ function create ()
     platforms.create(750, 100, 'ground');
     platforms.create(300, 400, 'ground');
     platforms.create(600, 500, 'ground-1');
+    platforms.create(680, 460, 'box');
+    platforms.create(150, 150, 'box');
+    platforms.create(600, 216, 'box');
 
     // The player and its settings
     player = this.physics.add.sprite(120, 450, 'dude');
